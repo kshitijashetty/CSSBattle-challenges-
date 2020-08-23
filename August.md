@@ -1066,27 +1066,275 @@
 
 [#21](https://cssbattle.dev/play/21)
 ```html
-
+<div class="wrapper">
+  <div class="L-shape top"></div>
+  <div class="L-shape bottom"></div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .L-shape{
+    width:50px;
+    height:70px;
+    transform:rotate(45deg);
+    position:relative;
+  }
+  .top{
+   
+    border-bottom:30px #F2994A solid;
+    border-left:30px #F2994A solid;
+    border-radius:0px 0px 0px 10px;
+    left:30px;
+    bottom:25px;
+  }
+  .bottom{
+ 
+    border-top: 30px #2D9CDB solid;
+    border-right: 30px #2D9CDB solid;
+    border-radius:0px 10px 0px 0px;
+    right:30px;
+    top:25px;
+  }
+</style>
 ```
 
 [#22](https://cssbattle.dev/play/22)
 ```html
-
+<div class="wrapper">
+    <div class="cloud-1"></div>
+    <div class="cloud-2"></div>
+    <div class="gap"></div>
+    <div class="cloud-3"></div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #F5D6B4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .gap{
+    width: 115px;
+    height: 40px;
+    background: #D86F45;
+    position:absolute;
+    right:130px;
+    top:175px;
+  }
+  .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:130px;
+    width:300px;
+    background:yellow;
+  }
+  .cloud-1{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#D86F45;
+    position:relative;
+    top:15px;
+    left:25px;
+  }
+  .cloud-2{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#D86F45;
+    position:relative;
+    bottom:15px;
+    right:-5px;
+  }
+  .cloud-3{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#D86F45;
+    position:relative;
+    top:40px;
+    right:25px
+  }
+</style>
 ```
 
 [#23](https://cssbattle.dev/play/23)
 ```html
-
+<div class="wrapper">
+  <div class="square1">
+ 	 <div class="square2">
+  		<div class="square3"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #F3AC3C;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .square1{
+    width:200px;
+    height:200px;
+    background:#1A4341;
+    transform:rotate(-90deg);
+  }
+  .square2{
+    width:100px;
+    height:100px;
+    background:#998235;
+    transform:rotate(-90deg);
+  }
+  .square3{
+    width:50px;
+    height:50px;
+    background:#F3AC3C;
+  }
+</style>
 ```
 
 [#24](https://cssbattle.dev/play/24)
 ```html
-
+<div class="wrapper">
+  <div class="on">
+    <div class="circle-on"></div>
+    <div class="circle top"></div>
+  </div>
+  <div class="off">
+    <div class="circle bottom"></div>
+    <div class="circle-off"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #62306D;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .circle{
+    background: #F7EC7D;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+  }
+  .circle-on{
+    background: #AA445F;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+  }
+  .circle-off{
+    background: #E38F66;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+  }
+  .top{
+    position:relative;
+    top:-50px;
+  }
+  .bottom{
+    position:relative;
+    bottom:-50px;
+  }
+  .on{
+    width:100px;
+    height:200px;
+    background:linear-gradient(#62306D 25%, #AA445F 25% 50%, #62306D 50%);
+    margin:0px 20px;
+  }
+  .off{
+    width:100px;
+    height:200px;
+    background:linear-gradient(#62306D 50%, #E38F66 50% 75%, #62306D 75%);;
+    margin:0px 20px;
+  }
+</style>
 ```
 
 [#25](https://cssbattle.dev/play/25)
 ```html
-
+<div class="wrapper">
+  <div class="on">
+    <div class="leaf-big flip-big"></div>
+    <div class="leaf-small flip-small"></div>
+  </div>
+  <div class="off">
+    <div class="leaf-small"></div>
+    <div class="leaf-big pos"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #998235;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .leaf-big{
+    height:100px;
+    width:75px;
+    border-radius:50% 0% 50% 0%;
+    background:#1A4341;
+    margin:5px;
+  }
+  .leaf-small{
+    height:60px;
+    width:75px;
+    border-radius:70% 0% 70% 0%;
+    background:#F3AC3C;
+    margin:5px;
+  }
+  .flip-big{
+    width:100px;
+    height:75px;
+    transform:rotate(-90deg);
+  }
+  .flip-small{
+    height:75px;
+    width:60px;
+    position:relative;
+    top:15px;
+    left:20px;
+    transform:rotate(-90deg);
+  }
+  .pos{
+    position:relative;
+    top:10px;
+  }
+</style>
 ```
 
 [#26](https://cssbattle.dev/play/26)
