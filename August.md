@@ -131,7 +131,8 @@
   background: #6592CF;
   width: 400px;
   height: 300px;
-}>
+}
+</style>
 ```
 
 [#4](https://cssbattle.dev/play/4)
