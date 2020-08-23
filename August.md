@@ -981,30 +981,125 @@
 
 [#20](https://cssbattle.dev/play/20)
 ```html
-
+<div class="div">
+  <div class="part1">
+    <div class="sec-big TL"></div>
+    <div class="sec-big BL"></div>
+    <div class="sec-small TR-1"></div>
+    <div class="sec-small BR-1"></div>
+  </div>
+  <div class="part2">
+    <div class="sec-small TL"></div>
+    <div class="sec-small BL"></div>
+    <div class="sec-big TR"></div>
+    <div class="sec-big BR"></div>
+  </div>
+  
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .div {
+    width: 400px;
+    height: 300px;
+    background: #62306D;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .part1{
+    width: 140px;
+    height: 100px;
+    background: #F7EC7D;
+  }
+  .part2{
+    width: 60px;
+    height: 100px;
+    background: #E38F66;
+  }
+  .sec-big{
+    width:20px;
+    height:20px;
+    background:#62306D;
+  }
+  .sec-small{
+    width:10px;
+    height:10px;
+    background:#62306D;
+  }
+  .BL{
+    border-radius:0 100% 0 0; 
+    position:absolute;
+    bottom:100px
+  }
+  .TL{
+    border-radius:0 0 100% 0;
+  }
+  .BR{
+    border-radius:100% 0 0 0;
+    position:absolute;
+    right:100px;
+    bottom:100px
+  }
+  .TR{
+    border-radius:0 0 0 100%; 
+    position:absolute;
+    top:100px;
+    right:100px;
+  }
+  .BR-1{
+    border-radius:100% 0 0 0;
+    position:absolute;
+    right:160px;
+    bottom:100px
+  }
+  .TR-1{
+    border-radius:0 0 0 100%; 
+    position:absolute;
+    top:100px;
+    right:160px;
+  } 
+</style>
+]
 ```
 
-[#14](https://cssbattle.dev/play/14)
+[#21](https://cssbattle.dev/play/21)
 ```html
 
 ```
 
-[#14](https://cssbattle.dev/play/14)
+[#22](https://cssbattle.dev/play/22)
 ```html
 
 ```
 
-[#14](https://cssbattle.dev/play/14)
+[#23](https://cssbattle.dev/play/23)
 ```html
 
 ```
 
-[#14](https://cssbattle.dev/play/14)
+[#24](https://cssbattle.dev/play/24)
 ```html
 
 ```
 
-[#14](https://cssbattle.dev/play/14)
+[#25](https://cssbattle.dev/play/25)
+```html
+
+```
+
+[#26](https://cssbattle.dev/play/26)
+```html
+
+```
+
+[#27](https://cssbattle.dev/play/28)
+```html
+
+```
+
+[#28](https://cssbattle.dev/play/28)
 ```html
 
 ```
