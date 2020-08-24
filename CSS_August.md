@@ -86,14 +86,99 @@
 </style>
 ```
 
-[]()
+[#31](https://cssbattle.dev/play/31)
 ```html
+<div class="wrapper">
+  <div class="circle left"></div>
+  <div class="rectangle"></div>
+  <div class="circle right"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+ .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #AA445F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .circle{
+    width:100px;
+    height:200px;
+    
+    border-bottom-left-radius: 200px;
+    border-top-left-radius:200px;
+  }
+  .left{
+    background:#F7EC7D;
+  }
+  .right{
+    background:#E38F66;
+    transform:rotate(-180deg)
+  }
+  .rectangle{
+    height:200px;
+    width:50px;
+  }
+</style>
 
 ```
 
-[]()
+[#32](https://cssbattle.dev/play/32)
 ```html
-
+<div class="wrapper">
+  <div class="container">
+    <div class="green"></div>
+    <div class="center">
+      <div class="yellow"></div>
+      <div class="square"></div>
+      <div class="yellow"></div>
+    </div>
+    <div class="green"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+ .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #FFFFFF;
+    display:grid;
+    place-items:center;
+  }
+  .container{
+    display:grid;
+    place-items:center;
+    transform:rotate(45deg);
+  }
+  .green{
+    height:75px;
+    width:50px;
+    background:#A3A368;
+  }
+  .center{
+    height:50px;
+    width:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .yellow{
+    height:50px;
+    width:75px;
+    background:#F3AC3C;
+  }
+  .square{
+    height:50px;
+    width:50px;
+    background:#FBE18C;
+  }
+</style>
 ```
 
 
