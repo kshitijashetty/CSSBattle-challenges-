@@ -1339,15 +1339,195 @@
 
 [#26](https://cssbattle.dev/play/26)
 ```html
+<div class="wrapper">
+  <div class="section1">
+    <div class="outer-circle">
+      <div class="inner-circle"></div>
+    </div>
+    <div class="outer-circle">
+      <div class="inner-circle"></div>
+    </div>
+    </div>
+  <div class="section2">
+  <div class="outer-circle mouth">
+    <div class="inner-circle"></div>
+  </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #6592CF;
+    display:grid;
+  }
+  .outer-circle{
+    background:linear-gradient(#060F55 50%, #6592CF 50%);
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    margin:-10px 35px;
+  }
+   .inner-circle{
+    background:#6592CF;
+    width:80px;
+    height:80px;   
+    border-radius:50%;
+  }
 
+  .section1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .section2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .mouth{
+    position:absolute;
+    top:150px;
+    left:110px;
+    background:linear-gradient( #6592CF 50%, #060F55 50%);
+  }
+ 
+</style>
 ```
 
-[#27](https://cssbattle.dev/play/28)
+[#27](https://cssbattle.dev/play/27)
 ```html
-
+<div class="wrapper">
+  <div class="circle">
+ 	 <div class="inner-circle">
+       <div class="small-circle">
+         <div class="sector-up"></div>
+         <div class="sector-down"></div>
+       </div>
+     </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #E38F66;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .circle{
+    background:#AA445F;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .inner-circle{
+  //background:linear-gradient(to right, #F7EC7D 40%, #AA445F 40% 60%, #F7EC7D 60%);
+    background:#F7EC7D;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+   // transform:rotate(145deg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .small-circle{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#AA445F;
+    display:grid;
+  }
+  .sector-up{  
+    position:absolute;
+    bottom:150px;
+    left:120px;
+    height:80px;
+    width:80px;
+    border-radius:100% 0 0 0;
+    background:#AA445F;
+  }  
+   .sector-down{  
+    position:absolute;
+    top:150px;
+    right:120px;
+    height:80px;
+    width:80px;
+    border-radius:0% 0 100% 0;
+    background:#AA445F;
+  } 
+</style>
 ```
 
 [#28](https://cssbattle.dev/play/28)
 ```html
+<div class="wrapper">
+  <div class="container rotate">
+    <div class="ball yellow"></div>
+    <div class="cup green rotate"></div>
+    <div class="cup yellow rotate"></div>
+    <div class="ball green"></div>
+  </div>
+  <div class="container">
+    <div class="cup yellow rotate"></div>
+    <div class="ball green"></div>
+    <div class="ball yellow"></div>
+    <div class="cup green rotate"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #1A4341;
+    display:grid; 
+  }
+  .container{
+    height:130px;
+    width:380px;
+    display:flex;
+    justify-content:center;
+    background:#1A4341;
+    margin:10px;
+  }
+  .rotate{
+    transform:rotate(-180deg);
+  }
 
+  .ball{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin:0px 10px;
+  }
+  .cup{
+    width:50px;
+    height:50px;
+    border-radius:50% 50% 0% 0%;
+    margin:0px 10px;
+    
+  }
+  .green{
+    background:#998235;
+  }
+  .yellow{
+    background:#F3AC3C;
+  }
+</style>
 ```
