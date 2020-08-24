@@ -182,9 +182,54 @@
 ```
 
 
-[]()
+[#33](https://cssbattle.dev/play/33)
 ```html
-
+<div class="wrapper">
+  <div class="semi">
+    <div class="circle"></div>
+  </div>
+  <div class="sector"></div>
+</div>
+<style>
+  body{
+    margin:0px;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #1A4341;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .semi{
+    height:150px;
+    width:75px;
+    background:#998235;
+    border-top-left-radius:150px;
+    border-bottom-left-radius:150px;
+    position:relative;
+    left:10px;
+  }
+  .sector{
+    height:100px;
+    width:100px;
+    background:#F3AC3C;
+    border-radius:0px 100% 0px 0px;
+    position:relative;
+    bottom:50px;
+    left:10px;
+  }
+  .circle{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color:#0B2429;
+    position:relative;
+    left:30px;
+    top:30px;
+  }
+</style>
 ```
 
 []()
