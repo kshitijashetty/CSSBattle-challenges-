@@ -564,7 +564,7 @@
     background:linear-gradient(to right,#243D83 50%, #6592CF 50%);
   }
 </style>
-```html
+```
 
 
 [#41](https://cssbattle.dev/play/41)
@@ -649,98 +649,98 @@
     border-top-left-radius:50px;
   }
 </style>
-```html
+```
 
 
 [#42](https://cssbattle.dev/play/42)
 ```html
-```html
+```
 
 
 [#43](https://cssbattle.dev/play/43)
 ```html
-```html
+```
 
 
 [#44](https://cssbattle.dev/play/44)
 ```html
-```html
+```
 
 [#45](https://cssbattle.dev/play/45)
 ```html
-```html
+```
 
 
 [#46](https://cssbattle.dev/play/46)
 ```html
-```html
+```
 
 
 [#47](https://cssbattle.dev/play/47)
 ```html
-```html
+```
 
 
 [#48](https://cssbattle.dev/play/48)
 ```html
-```html
+```
 
 
 [#49](https://cssbattle.dev/play/49)
 ```html
-```html
+```
 
 
 [#50](https://cssbattle.dev/play/50)
 ```html
-```html
+```
 
 
 [#51](https://cssbattle.dev/play/51)
 ```html
-```html
+```
 
 
 [#52](https://cssbattle.dev/play/52)
 ```html
-```html
+```
 
 
 [#53](https://cssbattle.dev/play/53)
 ```html
-```html
+```
 
 
 [#54](https://cssbattle.dev/play/54)
 ```html
-```html
+```
 
 
 [#55](https://cssbattle.dev/play/55)
 ```html
-```html
+```
 
 
 [#56](https://cssbattle.dev/play/56)
 ```html
-```html
+```
 
 
 [#57](https://cssbattle.dev/play/57)
 ```html
-```html
+```
 
 
 [#58](https://cssbattle.dev/play/58)
 ```html
-```html
+```
 
 
 [#59](https://cssbattle.dev/play/59)
 ```html
-```html
+```
 
 
 [#60](https://cssbattle.dev/play/60)
 ```html
-```html
+```
