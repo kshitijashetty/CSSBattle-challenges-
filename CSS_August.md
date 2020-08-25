@@ -654,20 +654,241 @@
 
 [#42](https://cssbattle.dev/play/42)
 ```html
+<!--Not very accurate -->
+<div class="wrapper">
+  <div class="container">
+    <div class="face">
+      <div class="hair left"></div>
+      <div class="hair right"></div>
+    </div>
+    <div class="con">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+    <div class="mouth"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #293462;
+    display:grid;
+    place-items:center;
+  }
+  .container{
+    display:grid;
+    place-items:center;
+    position:relative;
+    top:50px;
+    //background:red;
+  }
+  .face{
+    width:200px;
+    height:200px;
+    display:flex;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:50px;
+    background:#FE5F55;
+  }
+  .con{
+    display:flex;
+  }
+  .eye{
+    width:60px;
+    height:60px;
+    background:#FFF1C1;
+    border-radius:50%;
+    margin:20px;
+    position:relative;
+    bottom:130px;
+  }
+  .hair{
+    height:80px;
+    width:80px;
+    background:linear-gradient(#293462 58%,#FFF1C1 58%);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    position:relative;
+    /*height:80px;
+    width:40px;
+    border-top-left-radius:50px;
+    border-top-right-radius:40px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:40px;
+    background:red;*/
+    
+  }
+  .left{
+    transform:rotate(-30deg);
+    left:20px;
+    top:-35px;
+  }
+  .right{
+    transform:rotate(30deg);
+    left:20px;
+    top:-35px;
+  }
+  .mouth{
+    height:10px;
+    width:40px;
+    border-radius:20px;
+    background:#FFF1C1;
+    position:relative;
+    bottom:130px;
+  }
+</style>
 ```
 
 
 [#43](https://cssbattle.dev/play/43)
 ```html
+<div class="wrapper">
+  <div class="part one">
+    <div class="inner"></div>
+  </div>
+  <div class="part two">
+  	<div class="inner"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #6592CF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .part{
+    background:#243D83;
+    height:240px;
+    width:110px;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .inner{
+    background:#6592CF;
+    height:180px;
+    width:80px;
+    border-radius:40px;
+  }
+  .one{
+    background:linear-gradient(to right, #6592CF 50%,#243D83 50%);
+  }
+  .two{
+    background:linear-gradient(to right,#243D83 50%, #6592CF 50%);
+  }
+</style>
 ```
 
 
 [#44](https://cssbattle.dev/play/44)
 ```html
+<div class="wrapper">
+  <div class="semi left"></div>
+  <div class="rectangle"></div>    
+  <div class="semi right"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #1A4341;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .semi{
+    height: 270px;
+    width: 115px;
+    background: #1A4341;
+  }
+  .left{
+    position:relative;
+    right:-20px;
+    border-bottom-right-radius: 270px;
+    border-top-right-radius: 270px;
+  }
+  .right{
+    position:relative;
+    left:-20px;
+    border-bottom-left-radius: 270px;
+    border-top-left-radius: 270px;
+  }
+  .rectangle{
+    width:160px;
+    height:180px;
+    background:linear-gradient(#F3AC3C 11%, #1A4341 11% 22%, #F3AC3C 22% 33%, #1A4341 33% 44%, #F3AC3C 44% 55%, #1A4341 55% 66%,#F3AC3C 66% 77%, #1A4341 77% 88%, #F3AC3C 88%);
+  }
+</style>
 ```
 
 [#45](https://cssbattle.dev/play/45)
 ```html
+<div class="wrapper">
+    <div class="square-1">
+      <div class="square-2">
+        <div class="partition"></div>
+      </div>
+    </div>
+  <div class="line"></div>
+  
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #1A4341;
+    display:grid;
+    justify-content:center;
+  }
+  .square-1{
+    width:210px;
+    height:180px;
+    border:30px solid #F3AC3C ;
+    border-top:0px;
+    display:flex;
+    justify-content:center;
+  }
+  .square-2{
+    width:90px;
+    height:120px;;
+    border:30px solid #998235 ;
+    border-top:0px;
+  }
+  .line{
+    width:270px;
+    height:10px;
+    border-top:30px solid #998235;
+    position:relative;
+    top:5px;
+  }
+  .partition{
+    z-index:1;
+    height:300px;
+    width:30px;
+    background:#F3AC3C;
+    position:relative;
+    right:-30px;
+  }
+</style>
 ```
 
 
