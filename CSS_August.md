@@ -899,36 +899,539 @@
 
 [#47](https://cssbattle.dev/play/47)
 ```html
+<div class="wrapper">
+  <div class="container">
+    <div class="line one"></div>
+    <div class="line two"></div>
+    <div class="line three"></div>
+    <div class="circle">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper{
+    width: 400px;
+    height: 300px;
+    background: #1A4341;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .container{
+    display:grid;
+    place-items:center;
+    transform:rotate(-180deg);
+    position:relative;
+    bottom:50px;
+  }
+  .line{
+    height:180px;
+    width:10px;
+    border-radius:10px;
+    background:#F3AC3C;
+  }
+  .one{
+    position:relative;
+    top:190px;
+  }
+  .two{
+    transform:rotate(60deg);
+    position:relative;
+  }
+  .three{
+    transform:rotate(-60deg);
+    position:relative;
+    bottom:200px;
+  }
+  .circle{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background:#F3AC3C;
+    position:relative;
+    bottom:320px;
+  }
+  .circle-1{
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    background:#998235;
+    position:relative;
+    top:70px;
+    left:20px;
+  }
+   .circle-2{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background:#998235;
+    position:relative;
+    top:40px;
+    left:50px;
+  }
+   .circle-3{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background:#998235;
+    position:relative;
+    top:-25px;
+    left:40px;
+  }
+</style>
 ```
 
 
 [#48](https://cssbattle.dev/play/48)
 ```html
+<div class="wrapper">
+  <div class="box shadow"></div>
+  <div class="box">
+    <div class="box-inner"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper{
+    width: 400px;
+    height: 300px;
+    background: #293462;
+    display:grid;
+    place-items:center;
+  }
+  .box{
+    height:100px;
+    width:200px;
+    background:#FE5F55;
+    border-radius:20px;
+    display:grid;
+    place-items:50%;  
+    position:relative;
+    bottom:85px;
+    display:grid;
+    place-items:center;
+  }
+  .shadow{
+    height:100px;
+    width:200px;
+    background:#A64942;
+    position:relative;
+    top:85px;
+  }
+  .box-inner{
+    width:140px;
+    height:40px;
+    border-radius:75px;
+    background:#A64942;
+  }
+</style>
 ```
 
 
 [#49](https://cssbattle.dev/play/49)
 ```html
+<div class="wrapper">
+  <div class="triangle"></div>
+  <div class="rectangle">
+    <div class="window"></div>
+    <div class="door"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper{
+    width: 400px;
+    height: 300px;
+    background: #6592CF;
+    display:grid;
+    place-items:center;
+  }
+  .triangle{
+    width:0px;
+    height:0px;
+    position:relative;
+    top:25px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+   border-bottom: 100px solid #243D83;
+}
+  .rectangle{
+    height:100px;
+    width:150px;
+    background:#243D83;
+    position:relative;
+    bottom:25px;
+    display:grid;
+    place-items:center;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+  }
+  .window{
+    width:100px;
+    height:10px;
+    border-radius:50px;
+    background:#EEB850;
+    position:relative;
+    bottom:15px;
+  }
+  .door{
+    position:relative;
+    top:10px;
+    width:50px;
+    height:50px;
+    background:#EEB850;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+  }
+</style>
 ```
 
 
 [#50](https://cssbattle.dev/play/50)
 ```html
+<div class="wrapper">
+  <div class="handle"></div>
+  <div class="handle-1"></div>
+  <div class="drop"></div>
+  <div class="drop"></div>
+  <div class="neck-1"></div>
+  <div class="neck-2"></div>
+  <div class="body">
+    <div class="wave one"></div>
+    <div class="wave two"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper{
+    width: 400px;
+    height: 300px;
+    background: #1A4341;
+    display:grid;
+    place-items:center;
+  }
+  .handle{
+    position:relative;
+    top:50px;
+    left:20px;
+    width:160px;
+    height:20px;
+    background:#F3AC3C;
+    border-radius:10px;
+  }
+  .handle-1{
+    position:relative;
+    left:90px;
+    top:40px;
+    width:20px;
+    height:30px;
+    background:#F3AC3C;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+  }
+  .neck-1{
+    position:relative;
+    bottom:45px;
+    width:20px;
+    height:25px;
+    background:#F3AC3C;
+  }
+  .neck-2{
+    position:relative;
+    bottom:48px;
+    width:50px;
+    height:20px;
+    background:#F3AC3C;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+  }
+  .drop{
+    position:relative;
+    left:90px;
+    top:50px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#998235;
+    margin:5px;
+  }
+  .wave{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    position:relative;
+    bottom:10px;
+  }
+  .one{
+    background:#998235;
+  }
+  .two{
+    background:#F3AC3C;
+  }
+  .body{
+    position:relative;
+    bottom:50px;
+    width:100px;
+    height:140px;
+    border-radius:20px;
+    background:linear-gradient(#F3AC3C 45%, #998235 45%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+</style>
 ```
 
 
 [#51](https://cssbattle.dev/play/51)
 ```html
+<div class="wrapper">
+  <div class="handle">
+    <div class="child"></div>
+  </div>
+  <div class="mask">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="circle"></div>
+  </div>
+  <div class="handle right">
+    <div class="child"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper{
+    width: 400px;
+    height: 300px;
+    background: #293462;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .handle{
+    position:relative;
+    top:-20px;
+    width:60px;
+    height:60px;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    background:#FFF1C1;
+    display:grid;
+    place-items:center;
+  }
+  .child{
+    width:40px;
+    height:40px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    background:#293462;
+  }
+  .right{
+    transform:rotate(-180deg);
+  }
+  .mask{
+    width:150px;
+    height:100px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    background:#FFF1C1;
+  }
+  .bar{
+    height:10px;
+    width:40px;
+    background:#FE5F55;
+    margin:10px;
+    border-radius:10px;
+    position:relative;
+    top:10px;
+    left:10px;
+  }
+  .circle{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background:#FE5F55;  
+    position:relative;
+    top:-10px;
+    left:90px;
+  }
+</style>
 ```
 
 
 [#52](https://cssbattle.dev/play/52)
 ```html
+<div class="wrapper">
+  <div class="container one">
+    <div class="circle-1"></div>
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+  <div class="container two">
+    <div class="circle-2"></div>
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+  <div class="container three">
+    <div class="circle-1"></div>
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+  <div class="container four">
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+  <div class="container five">
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+  <div class="container six">
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+  <div class="container seven">
+    <div class="circle"></div>
+    <div class="chain"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper{
+    width: 400px;
+    height: 300px;
+    background: #6592CF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:10px;
+    position:relative;
+  }
+  .chain{
+    height:47px;
+    width:10px;
+    background:#243D83;
+    position:relative;
+    left:15px;
+    top:16px;
+  }
+  .circle{
+    position:relative;
+    left:30px;
+    top:-10px;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background:#243D83;
+  }
+  .circle-1{
+    position:relative;
+    left:60px;
+    top:-10px;
+    background:#EEB850;
+    height:40px;
+    width:40px;
+    border-radius:50%;
+  }
+  .circle-2{
+    position:relative;
+    left:70px;
+    top:-20px;
+    background:#EEB850;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+  }
+  .one{
+    left:5px;
+  }
+  .two{
+    left:-60px;
+  }
+  .three{
+    left:-105px;
+  }
+  .four{
+    left:-80px;
+  }
+  .five{
+    left:-85px;
+  }
+  .six{
+    left:-90px;
+  }
+  .seven{
+    left:-95px;    
+  }
+</style>
 ```
 
 
 [#53](https://cssbattle.dev/play/53)
 ```html
+<div class="wrapper">
+  <div class="rectangle"></div>
+  <div class="circle">
+    <div class="sector"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #19191A;
+    display:grid;
+  }
+  .rectangle{
+    position:relative;
+    left:130px;
+    top:125px;
+    height:125px;
+    width:75px;
+    background:#F9E492;
+  }
+  .circle{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    background:#4F77FF;
+    position:relative;
+    left:130px;
+    top:-88px;
+  }
+  .sector{
+    position:relative;
+    top:75px;
+    height:75px;
+    width:75px;
+    border-radius: 0 0 0 100%;
+    background:#9AD5FF;
+  }
+</style>
+
 ```
 
 
