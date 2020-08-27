@@ -1431,40 +1431,579 @@
     background:#9AD5FF;
   }
 </style>
-
 ```
 
 
 [#54](https://cssbattle.dev/play/54)
 ```html
+<div class="wrapper">
+  <div class="fingers">
+    <div class="fore"></div>
+    <div class="middle"></div>
+    <div class="ring"></div>
+    <div class="little"></div>
+  </div>
+  <div class="thumb"></div>
+  <div class="palm"></div>
+  <div class="hand"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #F9E492;
+    display:grid;
+    place-items:center;
+  }
+  .fingers{
+    height:50px;
+    width:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    top:80px;
+  }
+  .fore{
+    background:#191919;
+    height:45px;
+    width:20px;
+    border-radius:10px;
+    margin:2.5px;
+        position:relative;
+    top:-5px;
+  }
+  .middle{
+    background:#191919;
+    height:50px;
+    width:20px;
+    border-radius:10px;  
+    margin:2.5px;
+    position:relative;
+    top:-12px;
+  }
+  .ring{
+    background:#191919;
+    height:45px;
+    width:20px;
+    border-radius:10px;
+    margin:2.5px;
+    position:relative;
+    top:-5px;
+  }
+  .little{
+    background:#191919;
+    height:35px;
+    width:20px;
+    border-radius:10px;
+    margin:2.5px;
+  }
+  .thumb{
+    z-index:1;
+    margin:2.5px;
+    position:relative;
+    top:20px;
+    left:-30px;
+    transform:rotate(60deg);
+    background:#191919;
+    border:5px #F9E492 solid;
+    height:66px;
+    width:20px;
+    border-radius:20px;
+  }
+  .palm{
+    position:relative;
+    top:-42px;
+    background:#191919;
+    height:40px;
+    width:100px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+  }
+  .hand{
+    position:relative;
+    top:-67px;
+    background:#191919;
+    height:50px;
+    width:50px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+  }
+</style>
 ```
 
 
 [#55](https://cssbattle.dev/play/55)
 ```html
+<div class="wrapper">
+  <div class="fan one"></div>
+  <div class="fan two"></div>
+  <div class="fan three"></div>
+  <div class="fan four"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+  }
+  .fan{
+    width:100px;
+    height:50px;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
+    position:relative;
+  }
+  .one{
+    background:#F9E492;
+    top:100px;
+    left:100px;
+  }
+  .two{
+    transform:rotate(180deg);
+    background:#F9E492;
+    top:75px;
+    left:200px;
+  }
+  .three{
+    transform:rotate(90deg);
+    background:#4F77FF;
+    bottom:75px;
+    left:175px;
+  }
+  .four{
+    transform:rotate(-90deg);
+    background:#4F77FF;
+    left:125px;
+    bottom:50px;
+  }
+</style>
 ```
 
 
 [#56](https://cssbattle.dev/play/56)
 ```html
+<div class="wrapper">
+  <div class="skull">
+    <div class="head">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+    <div class="neck">
+      <div class="nose"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;
+  }
+  .skull{
+    display:grid;
+    place-items:center;
+    height:300px;
+  }
+  .head{
+    position:relative;
+    top:42px;
+    background:#4F77FF;
+    height:100px;
+    width:120px;
+    border-top-left-radius:60px;
+    border-top-right-radius:60px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .neck{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    bottom:43px;
+    background:#4F77FF;
+    height:30px;
+    width:80px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+  }
+  .eye{
+    width:40px;
+    height:40px;
+    margin:0px 5px;
+    border-radius:50%;
+    background:#191919;
+    position:relative;
+    top:23px;
+  }
+  .nose{
+    position:relative;
+    bottom:14px;
+    left:24px;
+    width:20px;
+    height:20px;
+    margin:0px 5px;
+    border-radius:50%;
+    background:#191919;
+  }
+  .line{
+    height:10px;
+    width:10px;
+    margin:3px;
+    background:#191919;
+    position:relative;
+    top:10px;
+    left:-15px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+  }
+</style>
 ```
 
 
 [#57](https://cssbattle.dev/play/57)
 ```html
+<div class="wrapper">
+  <div class="square">
+    <div class="circle-1 TL">
+      <div class="circle">
+        <div class="inner"></div>
+      </div>
+    </div>
+    <div class="circle-1 TR">
+      <div class="circle topR">
+        <div class="inner topR"></div>
+      </div>
+    </div>
+    <div class="circle-1 BL">
+      <div class="circle botL">
+        <div class="inner botL"></div>
+      </div>
+    </div>
+    <div class="circle-1 BR">
+      <div class="circle botR">
+        <div class="inner botR"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center
+  }
+  .square{
+    width:110px;
+    height:110px;
+    background:#4F77FF;
+  }
+  .circle-1{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#191919;
+    position:relative;
+  }
+  .circle{
+    width:45px;
+    height:45px;
+    background:#F9E492;
+    border-radius:50%;
+    position:relative;
+  }
+  .TL{
+    left:-20px;
+    top:-20px;
+  }
+  .TR{
+    left:70px;
+    top:-80px;
+  }
+  .BL{
+    left:-20px;
+    top:-50px;
+  }
+  .BR{
+    left:70px;
+    top:-110px;
+  }
+  .topR{
+    left:15px;
+  }
+  .botL{
+    top:15px;
+  }
+  .botR{
+    top:15px;
+    left:15px;
+  }
+  .inner{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#4F77FF;
+    position:relative;
+  }
+</style>
 ```
 
 
 [#58](https://cssbattle.dev/play/58)
 ```html
+<div class="wrapper">
+  <div class="circle"></div>
+  <div class="petal1"></div>
+  <div class="petal2"></div>
+  <div class="petal3"></div>
+  <div class="stickhead"></div>
+  <div class="sticktail"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;
+  }
+  .circle{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#4F77FF;
+    border:10px #191919 solid;
+    position:relative;
+    top:35px;
+    z-index:2;
+  } 
+  .petal1{
+    z-index:1;
+    background:#4F77FF;
+    width:100px;
+    height:30px;
+    border-bottom-left-radius:35px;
+    border-bottom-right-radius:35px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    position:relative;
+    top:5px;
+    border:10px #191919 solid;
+  }
+  .petal2{
+    background:#4F77FF;
+    width:140px;
+    height:30px;
+    border-bottom-left-radius:35px;
+    border-bottom-right-radius:35px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border:10px #191919 solid;
+    position:relative;
+    top:-25px;
+  }
+  .petal3{
+    z-index:1;
+    background:#4F77FF;
+    width:80px;
+    height:40px;
+    border-bottom-left-radius:50px;;
+    border-bottom-right-radius:50px;
+    position:relative;
+    transform:scale(1.2,1);
+    top:-25px;
+  }
+  .stickhead{
+    background:#F9E492;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    position:relative;
+    top:-45px;
+  }
+  .sticktail{
+    width:20px;
+    height:75px;
+    background:#F9E492;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position:relative;
+    top:-50px;
+  }
+</style>
 ```
 
 
 [#59](https://cssbattle.dev/play/59)
 ```html
+<div class="wrapper">
+  <div class="circle">
+    <div class="line-top"></div>
+    <div class="line-middle"></div>
+    <div class="line-bottom"></div>
+    <div class="median"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;
+  }
+  .circle{
+    background:#4F77FF;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+  }
+  .line-middle{
+    width:150px;
+    height:10px;
+    background: #191919;
+    position:relative;
+    top:60px;
+  }
+  .line-top{
+    width:150px;
+    height:10px;
+    background: #191919;
+    position:relative;
+    top:30px;
+  }
+  .line-bottom{
+    width:150px;
+    height:10px;
+    background: #191919;
+    position:relative;
+    top:90px;
+  }
+  .left{
+    width:100px;
+    height:150px;
+    position:relative;
+    left:30px;
+    top:-190px;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    border-left:10px #191919 solid;
+    border-top:10px #191919 solid;
+    border-bottom:10px #191919 solid;
+    transform:rotate(0deg);
+  }
+  .right{
+    width:100px;
+    height:150px;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-right:10px #191919 solid;
+    border-top:10px #191919 solid;
+    border-bottom:10px #191919 solid;
+    position:relative;
+    right:-10px;
+    bottom:360px;
+  }
+  .median{
+    width:10px;
+    height:150px;
+    background: #191919;
+    position:relative;
+    left:70px;
+    top:-30px;
+  }
+</style>
 ```
 
 
 [#60](https://cssbattle.dev/play/60)
 ```html
+<div class="wrapper">
+  <div class="container">
+    <div class="t-face1"></div>
+    <div class="t-face2"></div>
+    <div class="t-face3"></div>
+  </div>
+  <div class="container">
+    <div class="t-face1"></div>
+    <div class="t-face2"></div>
+    <div class="t-face3"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .container{
+    width:100px;
+    height:150px;
+    display:grid;
+    place-items:center;
+  }
+  .t-face1{
+    width:0px;
+    height:0px;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-top:50px solid #4F77FF;
+  }
+ .t-face2{
+    width:50px;
+    height:100px;
+    background:linear-gradient(#191919 50%,#4F77FF 50%);
+    transform:skew(0deg, 45deg);
+    position:relative;
+    left:-25px;
+    top:-25px;
+  }
+ .t-face3{
+    width:50px;
+    height:100px;
+    background:linear-gradient(#191919 50%,#4F77FF 50%);
+    transform:skew(0deg, -45deg);
+    position:relative;
+    top:-125px;
+    left:25px;
+  }
+</style>
 ```
