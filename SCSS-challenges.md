@@ -1,9 +1,6 @@
 # Yo bro! Wassup...
 <p align="center">
-  <img width="460" height="300" src="/images/Man.PNG">
-</p>
-<p align="center">
-  ![](/images/Man.PNG)
+  <img width="400px" height="400px" src="/images/Man.PNG">
 </p>
 ```html
 <div class="wrapper">
