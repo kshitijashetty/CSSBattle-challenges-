@@ -2,7 +2,8 @@
 <p align="center">
   <img width="400px" height="400px" src="/images/Man.PNG">
 </p>
-Code snippet
+
+
 ```html
 <div class="wrapper">
   <div class="wrapper__man">
