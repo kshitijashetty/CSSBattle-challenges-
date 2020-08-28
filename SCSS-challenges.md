@@ -1,5 +1,5 @@
 # Yo bro! Wassup...
-
+![Tux, the Linux mascot](/CSSBattle-challenges-/images/man.png)
 ```html
 <div class="wrapper">
   <div class="wrapper__man">
