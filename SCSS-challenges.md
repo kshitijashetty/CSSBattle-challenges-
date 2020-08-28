@@ -1,5 +1,5 @@
 # Yo bro! Wassup...
-![](/images/Man.png)
+![](/images/Man.PNG)
 ```html
 <div class="wrapper">
   <div class="wrapper__man">
