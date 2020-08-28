@@ -1,5 +1,10 @@
 # Yo bro! Wassup...
-![](/images/Man.PNG)
+<p align="center">
+  <img width="460" height="300" src="/images/Man.PNG">
+</p>
+<p align="center">
+  ![](/images/Man.PNG)
+</p>
 ```html
 <div class="wrapper">
   <div class="wrapper__man">
