@@ -564,6 +564,40 @@
     background:linear-gradient(to right,#243D83 50%, #6592CF 50%);
   }
 </style>
+
+Method 2
+<div class="wrapper">
+  <div class="b">
+    <div class="top"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #6592CF;
+    display:grid;
+    place-items:center;
+  }
+  .b{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:50px #243D83 solid; 
+    background:#6592CF;
+    border-top-color:#6592CF;
+    transform:rotate(-45deg);
+  }
+  .top{
+    width:50px;
+    height:100px;
+    background:#243D83;
+    transform:rotate(45deg) translate(-57px,-67.5px);
+  }
+</style>
 ```
 
 
