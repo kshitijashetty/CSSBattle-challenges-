@@ -412,62 +412,42 @@
 [#38](https://cssbattle.dev/play/38)
 ```html
 <div class="wrapper">
-  <div class="container">
-    <div class="square1"></div>
-    <div class="container-1">
-      <div class="rectangle-1"></div>
-      <div class="rectangle-2"></div>
-    </div>
-  </div> 
-  <div class="container">
-    <div class="rectangle-3"></div>
-    <div class="rectangle-4"></div>
-  </div>
+  <div class="square"></div>
+  <div class="rectangle one"></div>
 </div>
+<div class="rectangle two"></div>
 <style>
-  body{
-    margin:0px;
+  body {
+    margin: 0px;
   }
+
   .wrapper {
     width: 400px;
     height: 300px;
     background: #293462;
-    display:flex;
+    display: flex;
   }
-  .square1{
+
+  .square {
     width: 200px;
     height: 200px;
     background: #FFF1C1;
   }
-  .container{
-    width:200px;
-    height:300px;
+
+  .rectangle {
+    width: 150px;
+    height: 100px;
+    border-right: 50px #A64942 solid;
+    background: #FE5F55
   }
-  .container-1{
-    width:200px;
-    height:100px;
-    display:flex;
+
+  .one {
+    transform: translate(-200px, 200px);
   }
-  .rectangle-1{
-    width:150px;
-    height:100px;
-    background:#FE5F55
+
+  .two {
+    transform: rotate(90deg) translate(-250px, -150px);
   }
-  .rectangle-2{
-    width:50px;
-    height:100px;
-    background:#A64942;
-  }
- .rectangle-3{
-    width:100px;
-    height:150px;
-    background:#FE5F55
-  }
- .rectangle-4{
-    width:100px;
-    height:50px;
-    background:#A64942;
- }
 </style>
 ```
 
