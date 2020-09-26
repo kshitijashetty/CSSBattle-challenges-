@@ -1,4 +1,4 @@
-5[#29](https://cssbattle.dev/play/29)
+[#29](https://cssbattle.dev/play/29)
 ```html
 <div class="wrapper">
   <div class="container">
@@ -1925,7 +1925,7 @@ Method 2
     top:90px;
   }
   .left{
-    width:100px;
+    width:120px;
     height:150px;
     position:relative;
     left:30px;
@@ -1938,7 +1938,7 @@ Method 2
     transform:rotate(0deg);
   }
   .right{
-    width:100px;
+    width:120px;
     height:150px;
     border-top-right-radius:100%;
     border-bottom-right-radius:100%;
@@ -1946,7 +1946,7 @@ Method 2
     border-top:10px #191919 solid;
     border-bottom:10px #191919 solid;
     position:relative;
-    right:-10px;
+    right:10px;
     bottom:360px;
   }
   .median{
