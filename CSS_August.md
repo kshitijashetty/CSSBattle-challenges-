@@ -1,4 +1,4 @@
-[#29](https://cssbattle.dev/play/29)
+5[#29](https://cssbattle.dev/play/29)
 ```html
 <div class="wrapper">
   <div class="container">
@@ -1574,15 +1574,14 @@ Method 2
     border-top-left-radius:100px;
     border-top-right-radius:100px;
     position:relative;
+    background:#F9E492;
   }
   .one{
-    background:#F9E492;
     top:100px;
     left:100px;
   }
   .two{
     transform:rotate(180deg);
-    background:#F9E492;
     top:75px;
     left:200px;
   }
