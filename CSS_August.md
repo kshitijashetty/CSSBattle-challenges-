@@ -764,10 +764,8 @@ Method 2
 ```html
 <div class="wrapper">
   <div class="part one">
-    <div class="inner"></div>
   </div>
   <div class="part two">
-  	<div class="inner"></div>
   </div>
 </div>
 <style>
@@ -783,25 +781,19 @@ Method 2
     justify-content:center;
   }
   .part{
-    background:#243D83;
-    height:240px;
-    width:110px;
-    border-radius:40px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .inner{
-    background:#6592CF;
+    border:30px #243D83 solid;
+    border-right:0px;
     height:180px;
-    width:80px;
-    border-radius:40px;
+    width:40px;
+    border-radius:180px 0px 0px 180px;
+    position:relative;
   }
   .one{
-    background:linear-gradient(to right, #6592CF 50%,#243D83 50%);
+    left:15px;
+    transform:rotate(-180deg);
   }
   .two{
-    background:linear-gradient(to right,#243D83 50%, #6592CF 50%);
+    right:15px;
   }
 </style>
 ```
