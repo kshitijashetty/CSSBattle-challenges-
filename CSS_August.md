@@ -900,6 +900,61 @@ Method 2
 
 [#46](https://cssbattle.dev/play/46)
 ```html
+<div class="wrapper">
+  <div class="circle">
+    <div class="rectangle"></div>
+    <div class="rectangle-big">
+      <div class="semi"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #293462;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background: linear-gradient(#FFF1C1 75%,#FE5F55 75%);
+    display:flex;
+  }
+  .rectangle{
+    width:50px;
+    height:25px;
+    background:#FE5F55;
+    position:relative;
+    left:15px;
+    top:145px;
+    transform:rotate(45deg);
+  }
+ .rectangle-big{
+    width:140px;
+    height:80px;
+    background:#FE5F55;
+    position:relative;
+    left:2px;
+    top:97px;
+    border-bottom-left-radius:85px;
+    transform:rotate(-45deg);
+  }
+  .semi{
+    width:200px;
+    height:100px;
+    background:linear-gradient(transparent 80%,#FE5F55 80%);
+    border-bottom-right-radius:200px;
+    border-bottom-left-radius:200px;
+    transform:translate(-18px,-2px);
+  }
+</style>
 ```
 
 
