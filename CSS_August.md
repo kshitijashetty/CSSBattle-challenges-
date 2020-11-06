@@ -2066,4 +2066,57 @@ Method 2
     left:25px;
   }
 </style>
+
+Method 2
+
+<div class="container">
+  <div class="triangle triangle-left"></div>
+  <div class="triangle triangle-right"></div>
+  <div class="wrapper">
+    <div class="square"></div>
+    <div class="square square-rot"></div>
+    <div class="square"></div>
+    <div class="square square-rot"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .container{
+    display grid;
+    background: #19191A;
+  }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background: #19191A;
+    display:flex;
+    justify-content:center;
+  }
+  .square{
+    width:50px;
+    height:100px;
+    background:linear-gradient(#191919 50%,#4F77FF 50% 100%);
+    transform:skewY(45deg);
+  }
+  .square-rot{
+    transform:skewY(-45deg);
+  }
+  .triangle{
+    width:0px;
+    height:0px;
+    border-top:50px solid #4F77FF;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    position:relative;
+  }
+  .triangle-left{
+    left:100px;
+    top:75px;
+  }
+  .triangle-right{
+    left:200px;
+    top:25px;
+  }
 ```
