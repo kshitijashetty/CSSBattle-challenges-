@@ -2120,3 +2120,443 @@ Method 2
     top:25px;
   }
 ```
+
+[#61](https://cssbattle.dev/play/61)
+```html
+<div class="app">
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="p">
+    <div class="c"></div>
+    <div class="l"></div>
+    <div class="r"></div>
+  </div>
+  <div class="d"></div>
+  <div class="e"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;    
+  }
+  .a{
+    width:30px;
+    height:20px;
+    border:10px #5DBCF9 solid;
+    position:relative;
+    top:54px;
+  }
+  .b{
+    width:80px;
+    height:50px;
+    border:10px #5DBCF9 solid;
+    border-bottom:0;
+    position:relative;
+    top:20px;
+  }
+  .p{
+    display:flex;
+  }
+  .c{
+    width:80px;
+    height:25px;
+    border-top:10px #5DBCF9 solid;
+    border-left:10px #5DBCF9 solid;
+    transform:rotate(-30deg);
+    position:relative;
+    bottom:13px;
+    left:20px;
+  }
+  .r{
+    width:80px;
+    height:25px;
+    border-right:10px #5DBCF9 solid;
+    border-top:10px #5DBCF9 solid;
+    transform:rotate(30deg);
+    position:relative;
+    bottom:13px;
+    right:20px;
+  }
+  .l{
+    width:10px;
+    height:60px;
+    background:#5DBCF9;
+    position:relative;
+    bottom:23px;
+  }
+  .d{
+    width:200px;
+    height:10px;
+    background:#5DBCF9;
+    position:relative;
+    bottom:40px;
+  }
+  .e{
+    width:100px;
+    height:10px;
+    background:#5DBCF9;
+    position:relative;
+    bottom:54px;
+  }
+</style>
+```
+
+[#62](https://cssbattle.dev/play/62)
+```html
+<div class="app">
+  <div class="a">
+    <div class="s"></div>
+    <div class="q"></div>
+    <div class="s r"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;    
+  }
+  .a{
+    height:200px;
+    width:150px;
+    background:#F2AD43;
+    border-radius: 100px 100px 30px 30px;
+    display:grid;
+    overflow:hidden;
+  }
+  .s{
+    height:100px;
+    width:100px;
+    border-radius:0% 100% 0% 0%;
+    background:#E08027;
+    position:relative;
+    top:100px;
+    z-index:2;
+  }
+  .q{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#FFF58F;
+    position:relative;
+    left:45px;
+    bottom:10px;
+    z-index:1;
+  }
+  .r{
+    transform:rotate(-90deg);
+    background:#824B20;
+    position:relative;
+    top:-60px;
+    left:50px;
+    z-index:3;
+  }  
+</style>
+```
+
+[#63](https://cssbattle.dev/play/63)
+```html
+<div class="app">
+  <div class="d"></div>
+  <div class="one">
+    <div class="sq x"></div>
+    <div class="d"></div>
+    <div class="sq y"></div>
+  </div>
+  
+  <div class="two"></div>
+  <div class="three">
+  	<div class="sq a"></div>
+    <div class="d"></div>
+    <div class="sq b"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+  }
+  .one,
+  .three{
+    display:flex;
+    justify-content:center;
+  }
+  .two{
+    width:50px;
+    height:50px;
+    border:10px #5DBCF9 solid;
+    position:relative;
+    left:170px;
+    top:-5px;
+  }
+  .sq{
+    width:50px;
+    height:50px;
+    border:10px #5DBCF9 solid;
+    border-radius:50px 50px 0px 50px;
+    position:relative;
+  }
+  .d{
+    width:50px;
+    height:50px;
+  }
+  .x{
+    top:5px;
+    left:5px;
+  }
+  .y{
+    transform:rotate(90deg);
+    left:5px;
+    top:5px;
+  }
+  .a{
+    transform:rotate(270deg);
+    left:5px;
+    top:-15px;
+  }
+  .b{
+    transform:rotate(180deg);
+    left:5px;
+    top:-15px;
+  }
+</style>
+```
+
+[#64](https://cssbattle.dev/play/64)
+```html
+<div class="app">
+  <div class="c1">
+    <div class="k"></div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;
+  }
+  .c1{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#E08027;
+    border:30px #824B20 solid;
+    display:grid;
+    place-items:center;
+  }  
+  .k{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background: transparent;
+    border-bottom:20px #FFF58F solid;
+    border-left:20px transparent solid;
+    border-right:20px #FFF58F solid;
+    border-top:20px transparent solid;
+    transform:rotate(45deg);
+    position:relative;
+    left:-10px;
+    top:-10px;
+  }
+</style>
+```
+
+[#65](https://cssbattle.dev/play/65)
+```html
+<div class="app">
+  <div class="sound">
+    <div class="rec"></div>
+  </div>
+  <div class="circle one">
+  	<div class="circle two">
+    	<div class="circle three"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:flex;
+  }
+  .circle{
+    background:#191919;
+    border:10px #5DBCF9 solid;
+    border-left:0px;
+    display:grid;
+    justify-content:start;
+    place-items:center;
+  }
+  
+  .one{
+    width:90px;
+    height:180px;
+    border-top-right-radius:180px;
+    border-bottom-right-radius:180px;
+    position:relative;
+    left:125px;
+    top:50px;
+  }
+  .two{
+    width:65px;
+    height:130px;
+    border-top-right-radius:130px;
+    border-bottom-right-radius:130px;
+  }
+  .three{
+    width:40px;
+    height:80px;
+    border-top-right-radius:80px;
+    border-bottom-right-radius:80px;
+  }
+  .sound{
+    width:0px;
+    height:0px;
+    border-bottom:100px solid transparent;
+    border-top:100px solid transparent;
+    border-right:100px #5DBCF9 solid;
+    position:relative;
+    left:100px;
+    top:50px;
+  }
+  .rec{
+    width:70px;
+    height:50px;
+    background:#5DBCF9;
+    border-radius:10px;
+    position:relative;
+    left:-25px;
+    top:-25px;
+  }
+</style>
+```
+
+[#66](https://cssbattle.dev/play/66)
+```html
+<div class="app">
+  <div class="rec">
+    <div class="eye e1"></div>
+    <div class="head"></div>
+    <div class="eye e2"></div>
+  </div>
+  <div class="con">
+    <div class="cir one">
+       <div class="three"></div>
+    </div>
+    <div class="cir two">
+      <div class="four"></div>
+    </div>    
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;
+  }
+  .con{
+    width:250px;
+    height:100px;
+    background:linear-gradient(#F2AD43 80%,#191919);
+    display:flex;
+    position:relative;
+    top:-58px;
+  }
+  .cir{
+    background:#191919;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+  }
+  .one{
+    position:relative;
+    left:-20%;
+  }
+  .two{
+    position:relative;
+    left:40%;
+  }
+  .three{
+    background:#191919;
+    width:120px;
+    height:60px;
+    position:relative;
+    left:60%;
+    top:60%;
+    border-radius:120px/60px;
+    transform:rotate(5deg);
+  }
+  .four{
+    background:#191919;
+    width:120px;
+    height:60px;
+    position:relative;
+    left:-80%;
+    top:60%;
+    border-radius:120px/60px;
+    transform:rotate(-5deg);
+  }
+  .rec{
+    width:80px;
+    height:30px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background:#191919;
+    position:relative;
+    top:57px;
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    align-content:end;
+    align-items:end;
+  }
+  .head{
+    width:20px;
+    height:30px;
+    background:linear-gradient(transparent 35%,#F2AD43 35%);
+  }
+  .eye{
+    width:10px;
+    height:10px;
+    background:#F2AD43;
+    border-radius:50%;
+    position:relative;
+    top:5px;
+  }
+  .e1{
+    left:5px;
+  }
+  .e2{
+    left:-5px;
+  }
+</style>
+```
