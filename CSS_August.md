@@ -2560,3 +2560,85 @@ Method 2
   }
 </style>
 ```
+
+[#67](https://cssbattle.dev/play/67)
+```html
+<div class="app">
+  <div class="one"></div>
+  <div class="two rot"></div>
+  <div class="two"></div>
+  <div class="one rot"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:flex;
+  }
+  .one{
+    width:50px;
+    height:300px;
+    background:linear-gradient(#191919 27%,#5DBCF9 27% 40%,#191919 40% 77%,#5DBCF9 77% 90%,#191919 80%);    
+  }
+  .two{
+    width:150px;
+    height:300px;
+    background:linear-gradient(#191919 27%,#5DBCF9 27% 40%,#191919 40% 77%,#5DBCF9 77% 90%,#191919 80%);
+    border:10px #5DBCF9 solid;
+    border-top:0;
+    border-bottom:0;
+  }
+  .rot{
+    border-left:0;
+    transform:rotate(180deg)
+  }
+</style>
+```
+
+[#68](https://cssbattle.dev/play/68)
+```html
+<div class="app">
+  <div class="top"></div>
+  <div class="mid"></div>
+  <div class="bottom"></div>
+</div>
+<style>
+  body{
+    margin:0;
+  }
+  .app {
+    width: 400px;
+    height: 300px;
+    background: #191919;
+    display:grid;
+    place-items:center;
+  }
+  .top{
+    width:50px;
+    height:50px;
+    background:#F2AD43;
+    border-radius:50%;
+    position:relative;
+    top:53px;
+  }
+  .mid{
+    width:120px;
+    height:120px;
+    border-radius: 50% 50% 10% 10%;
+    background:#E08027;
+    z-index:1;
+  }
+  .bottom{
+    width:50px;
+    height:50px;
+    background:#824B20;
+    border-radius:50%;
+    position:relative;
+    top:-52px;    
+  }
+</style>
+```
