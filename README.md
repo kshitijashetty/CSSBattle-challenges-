@@ -1,2 +1,2 @@
-# CSSBattle-challenges-
+# CSSBattle-solutions
 CSS Battle solutions
